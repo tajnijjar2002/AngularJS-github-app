@@ -75,7 +75,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\app.js" />
     <Content Include="App\index.html" />
+    <Content Include="App\script.js" />
+    <Content Include="App\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
