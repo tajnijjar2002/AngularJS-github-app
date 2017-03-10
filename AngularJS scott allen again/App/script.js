@@ -1,17 +1,21 @@
 ﻿(function()
 {
-                
 
-    var MainController = function ($scope)
+    var MainController = function ($scope, $http)
     {
-        $scope.message = "hello";
+        $http.get("https://api.github.com/users/robconery")
+            .then(function(response)
+            {
+                $scope.user = response.data;
+            },
+            function(reason)
+            {
+                $scope.error = "Some error occured!";
+            });
     };
 
 
-    angular
-        .module("githubViewer")
-        .controller("MainController", ['$scope', MainController]);
+    //Registering a controller with the module.
+    app.controller("MainController", ['$scope', '$http', MainController]);
 
-
-    //app.controller("MainController", MainController());
 })();

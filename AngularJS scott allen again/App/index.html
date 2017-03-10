@@ -13,8 +13,14 @@
 </head>
 <body ng-controller="MainController">
 
-    <h1>{{message}}</h1>
-
+<div>
+    Name {{user.name}}<br />
+    Location {{user.location}}<br />
+    <img ng-src = "{{user.avatar_url}}" alt = "" />
+</div>
+<div>
+    Error: {{error}}
+</div>
 
     <script src="app.js"></script>
     <script src="script.js"></script>
