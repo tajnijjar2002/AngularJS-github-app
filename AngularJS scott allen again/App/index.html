@@ -13,16 +13,31 @@
 </head>
 <body ng-controller="MainController">
 
-<div>
-    Name {{user.name}}<br />
-    Location {{user.location}}<br />
-    <img ng-src = "{{user.avatar_url}}" alt = "" />
-</div>
-<div>
-    Error: {{error}}
-</div>
+    <h1>{{message}}</h1>
+
+
+    {{ countdown }}
+
+    <form ng-submit="search(username)" name="searchUser">
+        <input type="search" required="" placeholder="Username to find" ng-model="username" />
+        <input type="submit" value="Search" />
+    </form>
+
+
+    <div id="" ng-include="'userDetails.html'" ng-show="user"></div>
+
+    <div>
+        {{error}}
+    </div>
+
+
+
+
+
+
 
     <script src="app.js"></script>
     <script src="script.js"></script>
+    <script src="github.js"></script>
 </body>
 </html>
