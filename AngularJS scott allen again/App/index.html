@@ -6,38 +6,36 @@
             src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js">
 
     </script>
+    <script data-require="angular-route@*" data-semver="1.5.8"
+            src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
     <link href="style.css" type="text/css" rel="stylesheet" />
 
     <title></title>
     <meta charset="utf-8" />
 </head>
-<body ng-controller="MainController">
 
-    <h1>{{message}}</h1>
+<body>
+    <h2>Github Viewer</h2>
+    <div ng-view>
 
-
-    {{ countdown }}
-
-    <form ng-submit="search(username)" name="searchUser">
-        <input type="search" required="" placeholder="Username to find" ng-model="username" />
-        <input type="submit" value="Search" />
-    </form>
-
-
-    <div id="" ng-include="'userDetails.html'" ng-show="user"></div>
-
-    <div>
-        {{error}}
     </div>
 
-
-
-
-
-
-
     <script src="app.js"></script>
-    <script src="script.js"></script>
+    <script src="MainController.js"></script>
+    <script src="UserController.js"></script>
     <script src="github.js"></script>
+    <script src="RepoController.js"></script>
+</body>
+
+
+<body ng-controller="MainController">
+
+
+
+
+
+
+
+
 </body>
 </html>

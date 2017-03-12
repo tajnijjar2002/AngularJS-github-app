@@ -78,9 +78,13 @@
     <Content Include="App\app.js" />
     <Content Include="App\github.js" />
     <Content Include="App\index.html" />
-    <Content Include="App\script.js" />
+    <Content Include="App\main.html" />
+    <Content Include="App\MainController.js" />
+    <Content Include="App\repo.html" />
+    <Content Include="App\RepoController.js" />
     <Content Include="App\style.css" />
-    <Content Include="App\userDetails.html" />
+    <Content Include="App\UserController.js" />
+    <Content Include="App\user.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
